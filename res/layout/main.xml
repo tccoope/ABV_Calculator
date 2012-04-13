@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout android:id="@+id/output"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:stretchColumns="1">
+        <TableRow
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip">
+            <TextView android:text="ABV:"
+                    android:textSize="35dip"/>
+            <TextView android:id="@+id/abv"
+                    android:textSize="35dip"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:id="@+id/input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_below="@+id/output">
+        <TableRow>
+            <TextView android:text="OG:"
+                      android:textSize="20dip"/>
+            <EditText android:id="@+id/og"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="FG:"
+                    android:textSize="20dip"/>
+            <EditText android:id="@+id/fg"/>
+        </TableRow>
+        <Button android:id="@+id/calculate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                />
+    </TableLayout>
+</RelativeLayout>
+
